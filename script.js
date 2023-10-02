@@ -10,6 +10,8 @@ const nineButton=document.getElementById('nineButton');
 const zeroButton=document.getElementById('zeroButton');
 const plusButton=document.getElementById('plusButton');
 const minusButton=document.getElementById('minusButton');
+const timesButton=document.getElementById('timesButton');
+const divideButton=document.getElementById('divideButton');
 const equalButton=document.getElementById('equalButton');
 var calculatorDisplay=document.getElementById('calculatorDisplay');
 var char="";
@@ -81,6 +83,16 @@ plusButton.onclick=function(){
 
 minusButton.onclick=function(){
     char=char+minusButton.value;
+    calculatorDisplay.innerHTML=char;
+}
+
+timesButton.onclick=function(){
+    char=char+timesButton.value;
+    calculatorDisplay.innerHTML=char;
+}
+
+divideButton.onclick=function(){
+    char=char+divideButton.value;
     calculatorDisplay.innerHTML=char;
 }
 
