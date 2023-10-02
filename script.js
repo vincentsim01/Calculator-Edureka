@@ -13,6 +13,7 @@ const minusButton=document.getElementById('minusButton');
 const timesButton=document.getElementById('timesButton');
 const divideButton=document.getElementById('divideButton');
 const equalButton=document.getElementById('equalButton');
+const clearButton=document.getElementById('clearButton');
 var calculatorDisplay=document.getElementById('calculatorDisplay');
 var char="";
 
@@ -105,4 +106,10 @@ equalButton.onclick=function(){
     console.log(eval(char));
 
     calculatorDisplay.innerHTML=eval(char);
+    char=eval(char);
+};
+
+clearButton.onclick=function(){
+    char="";
+    calculatorDisplay.innerHTML=char;
 };
