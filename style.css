@@ -1,10 +1,29 @@
 #calculatorContainer{
     border:1px solid black;
+    margin:10px;
+}
+
+#numberButtonContainer{
+    text-align:center;
 }
 
 #calculatorDisplay{
     height:50px;
+    width:50%;
     border:solid 1px black;
+}
+
+.NumberButton{
+    background-color: turquoise;
+}
+.MathButton{
+    background-color: darkgoldenrod;
+    width:12%;
+}
+
+.controlButton{
+    background-color: yellow;
+
 }
 
 #calcTitle{
