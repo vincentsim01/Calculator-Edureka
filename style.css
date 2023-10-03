@@ -1,0 +1,12 @@
+#calculatorContainer{
+    border:1px solid black;
+}
+
+#calculatorDisplay{
+    height:50px;
+    border:solid 1px black;
+}
+
+#calcTitle{
+    text-align: center;
+}
