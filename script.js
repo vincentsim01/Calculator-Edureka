@@ -110,6 +110,6 @@ equalButton.onclick=function(){
 };
 
 clearButton.onclick=function(){
-    char="0";
-    calculatorDisplay.innerHTML=char;
+    char="";
+    calculatorDisplay.innerHTML=0;
 };
