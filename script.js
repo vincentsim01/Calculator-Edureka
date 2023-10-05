@@ -79,7 +79,7 @@ document.addEventListener('keydown',function(e) {
         char=char+minusButton.value;
         calculatorDisplay.innerHTML=char;
 
-    }else if(e.keyCode==56){
+    }else if(e.keyCode==170){
         char=char+finalChar;
         char=char+timesButton.value;
         calculatorDisplay.innerHTML=char;
@@ -89,8 +89,8 @@ document.addEventListener('keydown',function(e) {
         char=char+divideButton.value;
         calculatorDisplay.innerHTML=char;
 
-    }else if(e.keyCode==13){
-        var splicer=char.split("+");    
+    }else if(e.keyCode==69){
+        // var splicer=char.split("+");    
         calculatorDisplay.innerHTML=eval(char);
         finalChar=calculatorDisplay.innerText;
         char="";
@@ -202,7 +202,7 @@ divideButton.onclick=function(){
 }
 
 equalButton.onclick=function(){
-    var splicer=char.split("+");
+    // var splicer=char.split("+");
     // for(var i=0;i<splicer.length;i){
     //     var sum=0;
     //     sum=sum+splicer;
