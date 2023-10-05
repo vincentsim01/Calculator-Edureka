@@ -1,10 +1,20 @@
 #calculatorContainer{
     border:1px solid black;
     margin:10px;
+    padding:3%;
 }
 
 #numberButtonContainer{
     text-align:center;
+    padding:5%;
+    width:70%;
+    display:inline-block;
+}
+
+#MathButtonContainers{
+    display:inline-block;
+    width:20%;
+
 }
 
 #calculatorDisplay{
@@ -15,17 +25,49 @@
 
 .NumberButton{
     background-color: turquoise;
+    border-radius: 10px;
 }
+
+.NumberButton:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .MathButton{
     background-color: darkgoldenrod;
-    width:12%;
+    width:50%;
+    border-radius: 10px;
+    display:inline-block;
+}
+
+.MathButton:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .controlButton{
     background-color: yellow;
+    border-radius: 10px;
+}
 
+.controlButton:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #calcTitle{
     text-align: center;
+}
+
+@media(max-width:580px){
+
+    .MathButton{
+        background-color: darkgoldenrod;
+        width:10%;
+    }
+
+    .NumberButton{
+        background-color: turquoise;
+        width:30%;
+    }
+
+
 }
