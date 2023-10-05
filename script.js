@@ -18,6 +18,93 @@ var calculatorDisplay=document.getElementById('calculatorDisplay');
 var char="";
 var finalChar="";
 
+
+document.addEventListener('keydown',function(e) {
+    console.log(e.keyCode);
+    if (e.keyCode==49){
+        finalChar="";
+        char=char+parseInt(oneButton.value);
+        calculatorDisplay.innerHTML=char;
+    }else if (e.keyCode==50){
+        finalChar="";
+        char=char+parseInt(twoButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if (e.keyCode==51){
+        finalChar="";
+        char=char+parseInt(threeButton.value);
+        calculatorDisplay.innerHTML=char;
+    }else if (e.keyCode==52){
+        finalChar="";
+        char=char+parseInt(fourButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==53){
+        finalChar="";
+        char=char+parseInt(fiveButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==54){
+        finalChar="";
+        char=char+parseInt(sixButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==55){
+        finalChar="";
+        char=char+parseInt(sevenButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==56){
+        finalChar="";
+        char=char+parseInt(eightButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==57){
+        finalChar="";
+        char=char+parseInt(nineButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==48){
+        finalChar="";
+        char=char+parseInt(zeroButton.value);
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==187){
+        char=char+finalChar;
+        char=char+plusButton.value;
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==189){
+        char=char+finalChar;
+        char=char+minusButton.value;
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==56){
+        char=char+finalChar;
+        char=char+timesButton.value;
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==191){
+        char=char+finalChar;
+        char=char+divideButton.value;
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==13){
+        var splicer=char.split("+");    
+        calculatorDisplay.innerHTML=eval(char);
+        finalChar=calculatorDisplay.innerText;
+        char="";
+
+    }else if(e.keyCode==67){
+        char="";
+        calculatorDisplay.innerHTML=0;
+        finalChar="";
+
+    }
+
+
+});
+
 oneButton.onclick=function(){
     finalChar="";
     char=char+parseInt(oneButton.value);
@@ -54,11 +141,11 @@ sixButton.onclick=function(){
     calculatorDisplay.innerHTML=char;
 }
 
-oneButton.onclick=function(){
-    finalChar="";
-    char=char+parseInt(oneButton.value);
-    calculatorDisplay.innerHTML=char;
-}
+// oneButton.onclick=function(){
+//     finalChar="";
+//     char=char+parseInt(oneButton.value);
+//     calculatorDisplay.innerHTML=char;
+// }
 
 sevenButton.onclick=function(){
     finalChar="";
@@ -78,11 +165,11 @@ nineButton.onclick=function(){
     calculatorDisplay.innerHTML=char;
 }
 
-oneButton.onclick=function(){
-    finalChar="";
-    char=char+parseInt(oneButton.value);
-    calculatorDisplay.innerHTML=char;
-}
+// oneButton.onclick=function(){
+//     finalChar="";
+//     char=char+parseInt(oneButton.value);
+//     calculatorDisplay.innerHTML=char;
+// }
 
 zeroButton.onclick=function(){
     finalChar="";
