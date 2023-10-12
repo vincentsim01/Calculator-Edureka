@@ -15,6 +15,7 @@ const divideButton=document.getElementById('divideButton');
 const equalButton=document.getElementById('equalButton');
 const clearButton=document.getElementById('clearButton');
 var calculatorDisplay=document.getElementById('calculatorDisplay');
+const backSpaceButton=document.getElementById('backSpace');
 var char="";
 var finalChar="";
 
@@ -220,4 +221,13 @@ clearButton.onclick=function(){
     char="";
     calculatorDisplay.innerHTML=0;
     finalChar="";
+};
+
+backSpaceButton.onclick=function(){
+    console.log(typeof char);
+    char=char.slice(0,-1);
+    calculatorDisplay.innerHTML=char;
+    console.log(char);
+
+
 };

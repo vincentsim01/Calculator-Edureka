@@ -81,6 +81,10 @@
     background-color: darkorange;
 }
 
+#backSpaceImage{
+    height:20px;
+}
+
 #calcTitle{
     text-align: center;
 }
