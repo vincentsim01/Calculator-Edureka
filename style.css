@@ -21,6 +21,10 @@
     border-radius: 15px;
     background-color: beige;
     margin-bottom: 1%;
+    
+    padding-top:4.5rem;
+
+
 }
 
 #MathButtonContainers{
@@ -31,6 +35,7 @@
     text-align: center;
     padding-bottom: 3%;
     padding-left: 10%;
+    margin-top:3rem;
 
 
 
@@ -60,6 +65,7 @@
 }
 
 .MathButton{
+
     background-color: darkgoldenrod;
     width:30%;
     border-radius: 10px;
