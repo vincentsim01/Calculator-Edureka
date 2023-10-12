@@ -12,6 +12,7 @@ const plusButton=document.getElementById('plusButton');
 const minusButton=document.getElementById('minusButton');
 const timesButton=document.getElementById('timesButton');
 const divideButton=document.getElementById('divideButton');
+const negativeButton=document.getElementById('negativeButton');
 const equalButton=document.getElementById('equalButton');
 const clearButton=document.getElementById('clearButton');
 var calculatorDisplay=document.getElementById('calculatorDisplay');
@@ -88,6 +89,11 @@ document.addEventListener('keydown',function(e) {
     }else if(e.keyCode==191){
         char=char+finalChar;
         char=char+divideButton.value;
+        calculatorDisplay.innerHTML=char;
+
+    }else if(e.keyCode==78){
+        char=char+finalChar;
+        char=char+negativeButton.value;
         calculatorDisplay.innerHTML=char;
 
     }else if(e.keyCode==69){
@@ -199,6 +205,12 @@ timesButton.onclick=function(){
 divideButton.onclick=function(){
     char=char+finalChar;
     char=char+divideButton.value;
+    calculatorDisplay.innerHTML=char;
+}
+
+negativeButton.onclick=function(){
+    char=char+finalChar;
+    char=char+negativeButton.value;
     calculatorDisplay.innerHTML=char;
 }
 
