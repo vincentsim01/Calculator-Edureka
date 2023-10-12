@@ -224,10 +224,10 @@ clearButton.onclick=function(){
 };
 
 backSpaceButton.onclick=function(){
-    console.log(typeof char);
+
     char=char.slice(0,-1);
     calculatorDisplay.innerHTML=char;
-    console.log(char);
+
 
 
 };
