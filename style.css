@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(0deg, rgba(195,193,34,1) 0%, rgba(81,253,45,1) 100%);
+}
+
 #calculatorContainer{
     border:5px ridge palegoldenrod;
     margin:10px;
