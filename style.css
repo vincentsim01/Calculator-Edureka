@@ -30,7 +30,7 @@
 #MathButtonContainers{
     display:inline-block;
     width:28%;
-    background-color:gainsboro;
+    background: radial-gradient(circle, rgba(195,85,34,1) 0%, rgba(253,187,45,1) 100%);
     border-radius: 15px;
     text-align: center;
     padding-bottom: 3%;
@@ -86,7 +86,7 @@
 #ControlButtonContainer{
     text-align: center;
     border-radius: 20px;
-    background-color:palevioletred;
+    background: radial-gradient(circle, rgba(195,34,118,1) 0%, rgba(237,45,253,1) 100%);
     vertical-align:bottom;
     padding-bottom: 3%;
 }
