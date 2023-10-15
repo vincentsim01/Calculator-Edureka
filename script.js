@@ -208,11 +208,6 @@ divideButton.onclick=function(){
     calculatorDisplay.innerHTML=char;
 }
 
-squareButton.onclick=function(){
-    char=char+finalChar;
-    char=char+squareButton.value;
-    calculatorDisplay.innerHTML=char;
-}
 
 equalButton.onclick=function(){
     // var splicer=char.split("+");
